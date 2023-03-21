@@ -9,6 +9,7 @@ public class TestCases {
         int[][] img = new int[][]{{1,1,1},{1,1,0},{1,0,1}};
         int[][] expected = new int[][]{{2,2,2},{2,2,0},{2,0,1}};
 
-        Assertions.assertEquals(expected, solution.floodFill(img, 1, 1, 2));
+        Assertions.assertArrayEquals(expected, solution.floodFill(img, 1, 1, 2));
     }
 }
+
